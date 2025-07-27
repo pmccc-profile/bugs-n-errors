@@ -212,6 +212,10 @@ function toggleMode_1(mode,element){
 const main_sect_button = main_section.querySelectorAll('.button');
 main_sect_button.forEach(sect_button=>{
     sect_button.addEventListener("click",()=>{
-        alert("A work in progress.");
+        if(sect_button.id === "btn-cpp"){
+            alert("Visit: https://pmccc-profile.github.io/bne-dev-test-phase/ to check the ongoing development");
+        }else{
+            alert("A work in progress.");
+        }
     });
 });

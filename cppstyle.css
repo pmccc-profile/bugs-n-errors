@@ -1,0 +1,244 @@
+#cpp-main-section{
+    padding: 15px;
+}
+
+.cpp-section-flex-wrapper{
+    margin-block: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-if{
+    margin: auto;
+    margin-block: 30px;
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 30px;
+}
+
+.article-if:hover{
+    border-radius: 30px;
+}
+
+.article-if > h2{
+    margin: 0;
+    padding: 0;
+}
+.article-if > p{
+    margin-block: 5px;
+    padding: 0;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.article-if-wrapper{
+    margin-top: 10px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    border-top: 1px solid grey;
+}
+
+
+.flowchart_if_div, .code_if_div{
+    width: 350px;
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    /*border: 1px solid green;*/
+    box-shadow: 0 5px 15px 0 grey;
+}
+.flowchart_if_div > img, .code_if_div > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.if-demo{
+    position: relative;
+    margin: auto;
+    min-width: 350px;
+    max-width: 350px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.loader{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    /*background-color: rgba(0,0,0,0.1);*/
+    z-index: 1;
+}
+
+.loader .loader-buffer{
+    position: absolute;
+    top: 35.5%;
+    left: 40%;
+    width: 30px;
+    height: 30px;
+    border: 15px solid #f3f3f3;
+    border-top: 15px solid #3498db;
+    border-radius: 50%;
+    animation: spinLoaderBuffer 2s linear infinite;
+}
+
+@keyframes spinLoaderBuffer {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader .loader-result{
+    display: none;
+    position: relative;
+    top: 55%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    letter-spacing: 15px;
+    border: 1px solid white;
+    /*background-color: rgb(60,179,113);*/
+    animation: popupLoaderResult 1s;
+}
+
+.loader-result h2{
+    padding: 10px;
+    margin: 0;
+}
+
+@keyframes popupLoaderResult { 
+  from{ left:-50px; opacity:0 } 
+  to{ left:0; opacity:1 }
+}
+
+.demo-start, .demo-end{
+    margin: auto;
+}
+.demo-start > button, .demo-end > button{
+    margin: 0;
+    height: 50px;
+    width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 45px;
+    background-color: pink;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.div-score-wrapper{
+    margin-block: 50px;
+    position: relative;
+    height: 80px;
+    width: 100%;
+}
+
+.div-score{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+
+.div-score > p{
+    font-size: 25px;
+    text-align: center;
+    margin-block: 18px;
+}
+
+#div-score-70, #div-score1-70, #div-score2-70{
+    left: 35px;
+}
+#div-score-80, #div-score1-80, #div-score2-80{
+    left: 135px;
+}
+#div-score-90, #div-score1-90, #div-score2-90{
+    left: 235px;
+}
+
+
+.div-logic-if{
+    margin-inline: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: 80px;
+    width: 90px;
+    rotate: 45deg;
+    background-color: #73C2FB;
+    border: 1px solid blue;
+}
+.div-logic-if > p{
+    rotate: -45deg;
+    font-size: 20px;
+}
+
+/*MEDIA QUERY SECTION*/
+/*
+@media only screen and (max-width: 430px){
+
+    .flowchart_if_div, .code_if_div{
+        width: 100%;
+    }
+    #div-score-70, #div-score1-70, #div-score2-70{
+        left: -10px;
+    }
+    #div-score-80, #div-score1-80, #div-score2-80{
+        left: 82.5px;
+    }
+    #div-score-90, #div-score1-90, #div-score2-90{
+        left: 175px;
+    }
+
+}
+*/
+@media only screen and (max-width: 720px){
+    .cpp-section-flex-wrapper{
+        margin-block: 0;
+        padding: 0;
+    }
+    .article-if{
+        padding: 0;
+        border: none;
+    }
+    .article-if-wrapper{
+        flex-direction: column;
+    }
+    .if-demo{
+        min-width: 250px;
+        max-width: 250px;
+    }
+    .flowchart_if_div, .code_if_div{
+        width: 100%;
+    }
+    #div-score-70, #div-score1-70, #div-score2-70{
+        left: -10px;
+    }
+    #div-score-80, #div-score1-80, #div-score2-80{
+        left: 82.5px;
+    }
+    #div-score-90, #div-score1-90, #div-score2-90{
+        left: 175px;
+    }
+}
+/*
+@media only screen and (min-width: 2500px){
+
+}
+*/

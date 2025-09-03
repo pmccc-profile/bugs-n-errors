@@ -119,7 +119,7 @@ function toggleMode(mode){
     toggleMode_1(mode,navlist);
     
     //tricky, added to ensure functional and uniformed theme
-    if(!(window.location.toString().includes("playground"))){
+    if(!(window.location.toString().includes("playground") || (window.location.toString().includes("cpp")))){
     
         //selects all img and button in main_section
         let descImg = main_section.querySelectorAll('img');
@@ -209,11 +209,11 @@ function toggleMode_1(mode,element){
     }
 }
 
-const main_sect_button = main_section.querySelectorAll('.button');
+const main_sect_button = main_section.querySelectorAll(".learn-more-button");
 main_sect_button.forEach(sect_button=>{
     sect_button.addEventListener("click",()=>{
         if(sect_button.id === "btn-cpp"){
-            alert("Visit: https://pmccc-profile.github.io/bne-dev-test-phase/ to check the ongoing development");
+            document.location="cpp.html";
         }else{
             alert("A work in progress.");
         }

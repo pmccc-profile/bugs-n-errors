@@ -120,7 +120,7 @@ article .desc_text{
 .desc_text p{
     flex: 1;
 }
-.desc_text .button{
+.desc_text .learn-more-button{
     background-color: white;
     width: 100%;
     padding: 10px 15px;
@@ -131,7 +131,7 @@ article .desc_text{
     letter-spacing: 3px;
     cursor: pointer;
 }
-article .desc_text .button:hover{
+article .desc_text .learn-more-button:hover{
     color: red;
     transition: 0.3s;
 }
@@ -149,7 +149,7 @@ article .desc_text .button:hover{
     box-shadow: 0 5px 0 0 darkgreen;
 }
 */
-.cpp_article .desc_text .button{
+.cpp_article .desc_text .learn-more-button{
     border: 3px solid green;
     color: green;
 }
@@ -173,7 +173,7 @@ article .desc_text .button:hover{
     box-shadow: 0 5px 3px 0 darkblue;
 }
 */
-.r_article .desc_text .button{
+.r_article .desc_text .learn-more-button{
     border: 3px solid darkblue;
     color: darkblue;
 }
@@ -191,7 +191,7 @@ article .desc_text .button:hover{
     box-shadow: 0 5px 3px 0 darkorange;
 }
 */
-.sql_article .desc_text .button{
+.sql_article .desc_text .learn-more-button{
     border: 3px solid darkorange;
     color: darkorange;
 }
@@ -260,7 +260,7 @@ article .desc_text .button:hover{
     padding: 10px;
 }
 
-/*media query*/
+/*MEDIA QUERY SECTION*/
 @media only screen and (max-width: 720px) {
     #main-header{
         padding: 20px;
@@ -296,7 +296,7 @@ article .desc_text .button:hover{
     }
 }
 
-@media only screen and (min-width: 2500px){
+@media only screen and (min-width: 2000px){
     html,body{
         margin: auto;
         width: 50%;

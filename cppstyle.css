@@ -135,6 +135,7 @@
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    color: inherit;
     border-radius: 45px;
     background-color: pink;
     border: 1px solid red;
@@ -187,6 +188,25 @@
 .div-logic-if > p{
     rotate: -45deg;
     font-size: 20px;
+}
+
+
+.progress-bar{
+    display: none;
+    /*margin-block: 15px;*/
+    margin-top: -50px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #ddd;
+}
+.stat-progress-bar{
+    width: 1%;
+    height: 30px;
+    text-align: center;
+    background-color: green;
+}
+.stat-progress-bar span{
+    color: white;
 }
 
 /*MEDIA QUERY SECTION*/
